@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.login{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 370px;
+    width: 370px;
+    background-color: #3b5998;
+    display: inline-block;
+    border-radius: 30px;
+    padding:30px;
+}
+
+#name_id{
+    margin-bottom: 30px;
+}
+
+#name{
+    display: inline-block;
+    width: 95px;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input{
+    color: black;
+    font-weight: bold;
+    padding: 3px;
+    width: 65%;
+}
+
+#forget_field{
+    text-decoration: underline;
+    margin-left: 90px;
+}
+
+#submit_buttom{
+    text-align: center; /* Center-align the content */
+    margin-top: 50px;
+}
+
+button{
+    color: black;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
