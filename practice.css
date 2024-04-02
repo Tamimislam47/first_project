@@ -6,12 +6,14 @@
 
 body{
     display: flex;
-    justify-content: center;
-    padding: 40px;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
 }
 
 .totalbody{
-    width: 60vw;
+    width: 1600px;
     height: 100vh;
 }
 header{
@@ -26,6 +28,8 @@ header{
     height: 9vh;
     position: absolute;
     left: 0;
+    justify-items: center;
+    align-items: center;
 }
 
 #logo h1{
@@ -56,6 +60,7 @@ header{
     color: black;
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 #nav a:hover{
@@ -66,23 +71,570 @@ header{
 .filtering{
     position: relative;
     width: 100%;
-    height: 100vh;
-    background-color: aqua;
+    height: 1000px;
     display: flex;
 }
 
 #image{
     width: 100%;
-    height: 550px;
-    background-image: url(/hills.jpg);
+    height: 1000px;
+    background-image: url(/find.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+#contain h1{
+    font-size: 4rem;
+}
+
+#contain p{
+    font-size: 25px;
+}
+#contain{
+    text-align: center;
+    color: whitesmoke;
+}
+
+#search-bar{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.3);;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+}
+
+#for-find{
+    border-radius: 10px;
+    text-align: left;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#schedule{
+    height: 60px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#section-type{
+    height: 60px;
+    border-radius: 10px;
+    text-align: left;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#search{
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: orangered;
+}
+
+/*Filtering end*/
+
+/*popular tours start*/
+.popular-tours{
+    display: flex;
+}
+.left{
+    width: 65%;
+    height: auto;
+}
+.left h1{
+    font-size: 3rem;
+}
+
+.left p{
+    font-size: 1.5em;
+}
+
+/*right side*/
+
+.right{
+    width: 35%;
+    height: auto;
+    background-image: url(https://lp-cms-production.imgix.net/2021-01/GettyRF_450207051.jpg);
+    background-size: cover;
+    border-radius: 30px;
+}
+
+/*popular tours end*/
+
+/*read more*/
+.more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 220px;
+    background-color: orangered;
+    border-radius: 15px;
+}
+
+.more p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+
+/*choose-destination start*/
+
+.choose-destination{
+    text-align: center;
+}
+
+.choose-destination h1{
+    font-size: 3rem;
+}
+
+.choose-destination p{
+    font-size: 1.5em;
+}
+
+/*choose-destination end*/
+
+/*grid-destination start*/
+.flex-grid{
+    display: flex;
+}
+.grid-destination{
+    display: grid;
+    height: 1300px;
+    width: 100%;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+}
+
+.img{
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#contain{
-    text-align: center;
-    font-size: ;
+.img p{
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
 }
 
+.maldive{
+    background-image: url(/Images/maldive.png);
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    border-radius: 20px;
+}
+
+.indonesia{
+    background-image: url(/Images/indonesia.png);
+    grid-column-start: 7;
+    grid-column-end: span 6;
+    border-radius: 20px;
+}
+
+.srilanka{
+    border-radius: 20px;
+    background-image: url(/Images/srilanka.png);
+    grid-column-start: 1;
+    grid-column-end: span 4;
+}
+
+.n-america{
+    border-radius: 20px;
+    background-image: url(/Images/srilanka.png);
+    grid-column-start: 5;
+    grid-column-end: span 5;
+}
+
+.kashmir{
+    border-radius: 20px;
+    background-image: url(/Images/kasmir.png);
+    grid-column-start: 10;
+    grid-column-end: span 3;
+}
+
+.bangladesh{
+    border-radius: 20px;
+    background-image: url(/Images/bangladesh.png);
+    grid-column-start: 1;
+    grid-column-end: span 5;
+}
+
+.bandarban{
+    border-radius: 20px;
+    background-image: url(/Images/bandarban.png);
+    grid-column-start: 6;
+    grid-column-end: span 7;
+}
+/*grid-destination end*/
+
+/*grid-choose start*/
+.choose{
+    width: 100%;
+    height: 1200px;
+}
+.Why-Choose{
+    text-align: center;
+}
+
+.Why-Choose h1{
+    font-size: 3rem;
+}
+
+.Why-Choose p{
+    font-size: 1.5em;
+}
+
+.grid-choose{
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 25px;
+}
+
+.logoimage{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+.gridparts p{
+    font-size: 20px;
+}
+
+.gridparts h1{
+    font-size: 32px;
+}
+
+.map{
+    background-image: url(/Images/map.png);
+}
+
+.hotel{
+    background-image: url(/Images/hotel.jpg);
+}
+
+.leftside{
+    border-radius: 30px;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    padding: 25px;
+    background-color: wheat;
+}
+
+.rightside{
+    border-radius: 30px;
+    padding: 25px;
+    grid-column-start: 7;
+    grid-column-end: span 6;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    background-color: paleturquoise;
+}
+
+.bottommside{
+    border-radius: 30px;
+    padding: 25px;
+    grid-column-start: 4;
+    grid-column-end: span 6;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+    background-color: rgb(191, 243, 140);
+}
+
+/*grid-choose end*/
+
+/*Deals & Discounts start*/
+#discribe-deal h1{
+    font-size: 3rem;
+}
+
+#discribe-deal p{
+    font-size: 20px;
+}
+
+#discribe-deal{
+    text-align: center;
+}
+
+#image1{
+    background-image:url(Images/dil-image1.png);
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 130px;
+    border-radius: 15px;
+}
+
+#image2{
+    border-radius: 15px;
+    background-image:url(Images/dil-image2.png);
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 130px;
+    border-radius: 15px;
+}
+
+.deal-image{
+    width: 100%;
+    height: calc(160rem + 69px);
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,4fr);
+    gap:25px;
+}
+.img-child ul{
+    display: flex;
+    text-decoration: none;
+}
+
+.img-child li{
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+.img-child i{
+    font-size: 30px;
+    color: orangered;
+}
+.img-child a{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.img-child{
+    width: 800px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.img-child p{
+    font-size: 25px;
+}
+
+.img-child h1{
+    font-size: 32px;
+}
+
+.img-child button{
+    width: 220px;
+    height: 80px;
+    background-color: orangered;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+#all-package{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}   
+
+#all-package button{
+    width: 360px;
+    height: 80px;
+    background-color: orangered;
+    font-size: 32px;
+    color: white;
+    border-radius: 15px;
+}
+
+/*Deals & Discounts end*/
+
+/*Simple-Perfect start*/
+.Simple-Perfect{
+    display: flex;
+}
+.Simple-Perfect .left{
+    width: 55%;
+    height: auto;
+}
+.Simple-Perfect > .left h1{
+    font-size: 3rem;
+}
+
+.Simple-Perfect .left li p{
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.Simple-Perfect .left p{
+    font-size: 1.5em;
+}
+
+/*right side*/
+
+.Simple-Perfect-right{
+    width: 45%;
+    height: auto;
+    background-image: url(/Images/hill-station-chennai.jpg);
+    background-size: cover;
+    border-radius: 30px;
+}
+
+/*Simple-Perfect end*/
+
+/*newsletter-container start*/
+
+.newsletter-container{
+    width: 100%;
+    height: 650px;
+    margin-top: 250px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-container-left{
+    width: 40%;
+    height: 608px;
+    border: 2px solid orangered;
+    border-radius: 20px;
+    padding: 70px;
+}
+
+.subscribe-container-left button{
+    width: 100%;
+    height: 60px;
+    background-color: orangered;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.subscribe-container-left input[type="text"]{
+    font-size: 20px;
+}
+
+.subscribe-container-left input[type="text"]::placeholder {
+    font-size: 25px; 
+}
+
+.subscribe-container-left input{
+    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+} 
+
+.subscribe-container-left p{
+    font-size: 20px;
+}
+
+.subscribe-container-left h1{
+    font-size: 32px;
+}
+
+.subscribe-containe-right{
+    width: calc(100% - 40%);
+    height: 100%;
+    background-color: chartreuse;
+    background-image: url(/Images/subcribe-right.png);
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+}
+
+.inside-of-right{
+    margin:20px 30px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 350px;
+    background-color: orangered;
+    height: 150px;
+    transform:rotate(-18deg);
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.inside-of-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.inside-of-right p {
+    color: white;
+    font-size: 35px;
+}
+
+.inside-of-right a:hover{
+    text-decoration: underline;
+}
+/*newsletter-container end*/
+
+/*footer start*/
+.foter{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(202, 200, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#foter-logo{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#mid-text{
+    font-size: 25px;
+    margin-top: 30px;
+}
+hr{
+    width: 80%;
+    margin-top: 60px;
+}
+.icons{
+    margin-top: 50px;
+}
+.icons i{
+    margin-right: 15px;
+    font-size: 50px;
+}
+
+#last-foter{
+    margin-top: 100px;
+    font-size: 25px;
+}
+/*footer end*/
