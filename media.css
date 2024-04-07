@@ -1,4 +1,7 @@
 @media (max-width: 900px) {
+    .totalbody {
+        padding: 1rem;
+    }
     .nav-list{
         display: none;
     }
@@ -87,16 +90,180 @@
     }
 
     /* grid-destination start*/
+     /* grid-destination start*/
+      /* grid-destination start*/
+    .choose {
+        height: auto;
+    }
     .grid-destination {
-        display: grid;
-        width: 100%;
-        /* grid-template-rows: repeat(1,1fr); */
-        grid-column: span 1;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto; 
         gap: 20px;
+        height: auto; 
+    }
+
+    .maldive,
+    .indonesia,
+    .srilanka,
+    .n-america,
+    .kashmir,
+    .bangladesh,
+    .bandarban {
+        grid-column: auto; 
+        grid-row: auto; 
+        width: 100%; 
+        height: 300px;
     }
 
     .img p {
         font-size: 30px; /* Adjust font size for smaller screens */
     }
 
+    .grid-choose {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto; 
+        gap: 20px;
+        height: auto; 
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .logoimage{
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+    
+    .leftside,
+    .rightside,
+    .bottommside {
+        grid-column: auto; 
+        grid-row: auto; 
+        width: 100%; 
+        height: calc(41vh + 10px);
+    }
+
+    /* .leftside h1 {
+        font-size:2.2rem;
+    }
+    .rightside  h1{
+        font-size:2.2rem;
+    }
+
+    .bottommside h1 {
+        font-size:2.2rem;
+    } */
+    .leftside p{
+        font-size: 1.2rem;
+    }
+    .rightside p{
+        font-size: 1.2rem;
+    }
+    .bottommside p{
+        font-size: 1.2rem;
+    }
+
+    /*Deals & Discounts start*/
+    .about-deals h1 {
+        font-size:2.5rem;
+    }
+
+    .about-deals p {
+        font-size: 1.2rem;
+    }
+
+    #image1 {
+        display: flex;
+        padding: 100px;
+        height: auto;
+        width: 95vw;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #image2 {
+        display: flex;
+        padding: 100px;
+        height: auto;
+        width: 95vw;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .img-child ul {
+        display: block;
+    }
+
+    .img-child {
+        padding:10vw;
+    }
+
+    #all-package button{
+        width: 200px;
+        height: 80px;
+        background-color: orangered;
+        font-size: 20px;
+        color: white;
+        border-radius: 15px;
+    }
+
+    .Simple-Perfect {
+        display: block;
+    }
+    .Simple-Perfect .left{
+        width: 100%;
+        height: auto;
+    }
+
+    /*Deals & Discounts end*/
+
+    /*newsletter-container start*/
+    .newsletter-container {
+        display: block;
+    }
+
+    .subscribe-container-left {
+        width: 100%;
+    }
+
+    .subscribe-containe-right {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .inside-of-right {
+        display: flex;
+        width: 50%;
+        height: 20%;
+    }
+
+    .inside-of-right a {
+        font-size: 4.5vw;
+    }
+    
+    .inside-of-right p {
+        color: white;
+        font-size: 4vw;
+    }
+    /*newsletter-container end*/
+}
+ 
+@media (max-height: 700px){
+
+    .grid-choose {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto; 
+        gap: 50px;
+        height: auto; 
+        width: 100%;
+        margin-top: 20px;
+    }
+    .leftside,
+    .rightside,
+    .bottommside {
+        grid-column: auto; 
+        grid-row: auto; 
+        width: 100%; 
+        height: calc(51vh + 10px);
+    }
 }

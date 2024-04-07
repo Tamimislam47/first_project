@@ -4,7 +4,8 @@
     
     list-style-type: none;
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    box-sizing: border-box;
 }
 
 body{
@@ -17,6 +18,14 @@ body{
     width: 75rem;
     height: auto;
     padding: 1rem;
+}
+
+.totalbody h1{
+    font-size: 3rem;
+}
+
+.totalbody p {
+    font-size: 1.5rem;
 }
 
 .flex-box{
@@ -214,13 +223,13 @@ header{
 
 /*grid-destination start*/
 .flex-grid{
-    display: flex;
+    /* display: flex; */
     margin-top: 30px;
 }
 
 .grid-destination{
     display: grid;
-    /* height: 1370px; */
+    height: 1370px;
     width: 100%;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(3,1fr);
@@ -243,7 +252,7 @@ header{
 .maldive{
     background-image: url(/Images/maldive.png);
     grid-column-start: 1;
-    grid-column-end: span 6;
+    grid-column-end: 7;
     border-radius: 20px;
 }
 
@@ -290,3 +299,368 @@ header{
 }
 /*grid-destination end*/
 
+/*grid-choose start*/
+.choose{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Why-Choose{
+    text-align: center;
+}
+
+.Why-Choose h1{
+    font-size: 3rem;
+}
+
+.Why-Choose p{
+    font-size: 1.1rem;
+}
+.chose {
+    display: flex;
+}
+.grid-choose{
+    width: 100%;
+    height: 650px;
+    display: grid;
+    gap: 20px;
+}
+
+.gridparts p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.gridparts h1{
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.logoimage{
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+}
+
+.map{
+    background-image: url(/Images/map.png);
+}
+
+.hotel{
+    background-image: url(/Images/hotel.jpg);
+}
+
+.leftside{
+    font-size: 18px;
+    border-radius: 30px;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    background-color: wheat;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.rightside{
+    padding-top: 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    grid-column-start: 7;
+    grid-column-end: span 6;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    background-color: paleturquoise;
+    padding-left: 25px;
+}
+
+.bottommside{
+    padding-top: 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    grid-column-start: 4;
+    grid-column-end: span 6;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+    background-color: rgb(191, 243, 140);
+    padding-left: 25px;
+}
+
+/*grid-choose end*/
+
+/*Deals & Discounts start */
+.deals{ 
+    margin-top: 50px;
+}
+.image-section {
+    display: flex;
+    flex-direction: column;
+}
+.about-deals {
+    text-align: center;
+}
+
+.about-deals h1 {
+    font-size: 3rem;
+}
+
+.about-deals p {
+    font-size: 1.2rem;
+}
+
+#image1{
+    margin-top: 50px;
+    background-image:url(Images/dil-image1.png);
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 130px;
+    border-radius: 15px;
+}
+
+#image2{
+    margin-top: 50px;
+    background-image:url(Images/dil-image2.png);
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 130px;
+    border-radius: 15px;
+}
+.img-child p {
+    font-size: 1.2rem;
+}
+.img-child {
+    display: flex;
+    width: 600px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 50px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img-child li {
+    margin-left: 0.5rem;
+}
+
+.img-child ul {
+    display: flex;
+    text-decoration: none;
+}
+
+.img-child i{
+    font-size: 30px;
+    color: orangered;
+}
+
+.img-child h1 {
+    font-size: 1.7rem;
+}
+
+.img-child a{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.img-child button{
+    width: 200px;
+    height: 70px;
+    background-color: orangered;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#all-package{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}   
+
+#all-package button{
+    width: 250px;
+    height: 80px;
+    background-color: orangered;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 15px;
+}
+/*Deals & Discounts end*/
+
+/*Simple-Perfect start*/
+.Simple-Perfect {
+    display: flex;
+}
+.Simple-Perfect .left{
+    width: 55%;
+    height: auto;
+}
+.Simple-Perfect > .left h1{
+    font-size: 2rem;
+}
+
+.Simple-Perfect .left li p{
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.Simple-Perfect .left p{
+    font-size: 1.2rem;
+}
+
+/*right side*/
+
+.Simple-Perfect-right{
+    width: 45%;
+    height: auto;
+    background-image: url(/Images/hill-station-chennai.jpg);
+    background-size: cover;
+    border-radius: 30px;
+}
+
+/*Simple-Perfect end*/
+
+/*newsletter-container start*/
+
+.newsletter-container {
+    width: 100%;
+    height: 650px;
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-container-left {
+    width: 40%;
+    height: 608px;
+    border: 2px solid orangered;
+    border-radius: 20px;
+    padding: 70px;
+}
+
+.subscribe-container-left button{
+    width: 100%;
+    height: 60px;
+    background-color: orangered;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.subscribe-container-left input[type="text"]{
+    font-size: 20px;
+}
+
+.subscribe-container-left input[type="text"]::placeholder {
+    font-size: 25px; 
+}
+
+.subscribe-container-left input{
+    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+} 
+
+.subscribe-container-left p{
+    font-size: 20px;
+}
+
+.subscribe-container-left h1{
+    font-size: 32px;
+}
+
+.subscribe-containe-right {
+    width: calc(100% - 40%);
+    height: 100%;
+    background-color: chartreuse;
+    background-image: url(/Images/subcribe-right.png);
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+}
+
+.inside-of-right {
+    margin:20px 30px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 350px;
+    background-color: orangered;
+    height: 150px;
+    transform:rotate(-18deg);
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.inside-of-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.inside-of-right p {
+    color: white;
+    font-size: 35px;
+}
+
+.inside-of-right a:hover{
+    text-decoration: underline;
+}
+/*newsletter-container end*/
+
+/*foter start*/
+.foter {
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(224, 212, 212);
+    left: 0;
+}
+
+#foter-logo{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#mid-text{
+    font-size: 25px;
+    margin-top: 30px;
+}
+hr{
+    width: 80%;
+    margin-top: 60px;
+}
+.icons{
+    margin-top: 50px;
+}
+.icons i{
+    margin-right: 15px;
+    font-size: 50px;
+}
+
+#last-foter{
+    margin-top: 100px;
+    font-size: 25px;
+}
+/*foter end*/
