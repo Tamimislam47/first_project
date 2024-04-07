@@ -2,6 +2,9 @@
     .totalbody {
         padding: 1rem;
     }
+
+    /*header start */
+
     .nav-list{
         display: none;
     }
@@ -9,7 +12,9 @@
     .menu-icon i{
         display: block;
     }
+    /*header end*/
 
+    /*filtering start here*/
     .contain{
         display: flex;
     }
@@ -68,7 +73,9 @@
         border-radius: 10px;
         background-color: orangered;
     }
-
+    /*filtering end*/
+    
+    /*popular tours start*/
     .popular-tours { 
         display: flex;
         flex-direction: column;
@@ -89,12 +96,9 @@
         height: 541.8px;
     }
 
-    /* grid-destination start*/
-     /* grid-destination start*/
-      /* grid-destination start*/
-    .choose {
-        height: auto;
-    }
+    /*popular tours end*/
+
+    /*grid-destination start*/
     .grid-destination {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto; 
@@ -116,7 +120,14 @@
     }
 
     .img p {
-        font-size: 30px; /* Adjust font size for smaller screens */
+        font-size: 30px;
+    }
+
+    /*grid-destination end*/
+
+    /*grid-choose start*/
+    .choose {
+        height: auto;
     }
 
     .grid-choose {
@@ -142,17 +153,7 @@
         width: 100%; 
         height: calc(41vh + 10px);
     }
-
-    /* .leftside h1 {
-        font-size:2.2rem;
-    }
-    .rightside  h1{
-        font-size:2.2rem;
-    }
-
-    .bottommside h1 {
-        font-size:2.2rem;
-    } */
+    
     .leftside p{
         font-size: 1.2rem;
     }
@@ -162,6 +163,8 @@
     .bottommside p{
         font-size: 1.2rem;
     }
+
+    /*grid-choose end*/
 
     /*Deals & Discounts start*/
     .about-deals h1 {
@@ -220,6 +223,7 @@
     /*newsletter-container start*/
     .newsletter-container {
         display: block;
+        /* height: auto; */
     }
 
     .subscribe-container-left {
@@ -227,14 +231,15 @@
     }
 
     .subscribe-containe-right {
-        margin-top: 20px;
         width: 100%;
+        margin-top: 20px;
     }
 
     .inside-of-right {
         display: flex;
         width: 50%;
-        height: 20%;
+        height: 18%;
+
     }
 
     .inside-of-right a {
@@ -246,6 +251,20 @@
         font-size: 4vw;
     }
     /*newsletter-container end*/
+
+    /*footer start*/
+    #foter-logo p{
+        font-size: 2.5rem;
+    }
+
+    #mid-text {
+        font-size: 0.9rem;
+    }
+    
+    #last-foter {
+        font-size: 0.8rem;
+    }
+    /*footer end*/
 }
  
 @media (max-height: 700px){
